@@ -14,7 +14,9 @@ class Show extends Component {
     componentDidMount() {
         axios.get('/api/book/'+this.props.match.params.id)
             .then(res => {
-                this.setState({ book: res.data});
+                const x = res.data;
+                x.published_date = x.published_date.toString().split('T')[0]
+                this.setState({ book: x});
                 console.log(this.state.book);
             });
     }
