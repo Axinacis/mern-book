@@ -16,6 +16,7 @@ class Create extends Component {
             publisher: ''
         };
     }
+
     onChange = (e) => {
         const state = this.state
         state[e.target.name] = e.target.value;
@@ -24,8 +25,6 @@ class Create extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        //const culledDate = new Date(this.state.published_date.getDate(), this.state.published_date.getMonth(), this.state.published_date.getFullYear())
-        //this.state.published_date = culledDate
         const { isbn, title, author, description, published_date, publisher } = this.state;
 
         axios.post('/api/book', { isbn, title, author, description, published_date, publisher })

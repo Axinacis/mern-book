@@ -7,6 +7,7 @@ function Header() {
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/books">Book list</a></li>
+            <li><a href="/search">Search</a></li>
         </ul>
     );
 }

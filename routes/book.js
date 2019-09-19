@@ -5,7 +5,7 @@ const Book = require('../models/Book.js');
 const passport = require('passport');
 require('../config/passport')(passport);
 
-getToken = function (headers) {
+const getToken = function (headers) {
     if (headers && headers.authorization) {
         const parted = headers.authorization.split(' ');
         if (parted.length === 2) {
@@ -27,6 +27,46 @@ router.get('/', passport.authenticate('jwt', {session: false}), function (req, r
             if (err) return next(err);
             res.json(books);
         });
+    } else {
+        return res.status(403).send({success: false, msg: 'Unauthorized.'});
+    }
+});
+
+
+router.get('/findbook', passport.authenticate('jwt', {session: false}), async (req, res) => {
+    const match = {};
+    const mySort = {};
+
+    const token = getToken(req.headers);
+    if (token) {
+
+        if (req.query.sortBy) {
+            const sortArr = req.query.sortBy.split(':');
+            mySort[sortArr[0]] = sortArr[1].match(/^(desc|descending|-1)$/) ? -1 : 1
+        }
+
+        if (req.query.isbn) {
+            match.isbn = req.query.isbn
+        }
+
+        if (req.query.title) {
+            match.title = req.query.title
+        }
+
+        if (req.query.author) {
+            match.author = req.query.author
+        }
+
+        if (req.query.publisher) {
+            match.publisher = req.query.publisher
+        }
+
+        try {
+            const searchQuery = await Book.find(match).sort(mySort);
+            res.send(searchQuery)
+        } catch (e) {
+            res.status(500).send(e)
+        }
     } else {
         return res.status(403).send({success: false, msg: 'Unauthorized.'});
     }

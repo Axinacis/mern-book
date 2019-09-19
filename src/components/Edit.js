@@ -46,7 +46,6 @@ class Edit extends Component {
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <h4><Link to={`/show/${this.state.book._id}`}><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Book List</Link></h4>
                         <form onSubmit={this.onSubmit}>
                             <div class="form-group">
                                 <label for="isbn">ISBN:</label>

@@ -15,6 +15,7 @@ import Show from './components/Show';
 import Home from './components/Home';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Search from "./components/Search";
 
 ReactDOM.render(
     <Router>
@@ -30,6 +31,7 @@ ReactDOM.render(
                     <Route path='/edit/:id' component={Edit}/>
                     <Route path='/create' component={Create}/>
                     <Route path='/show/:id' component={Show}/>
+                    <Route path='/search' component={Search}/>
                 </Switch>
             </div>
             <Footer/>
