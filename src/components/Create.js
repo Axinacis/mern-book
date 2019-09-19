@@ -30,7 +30,7 @@ class Create extends Component {
 
         axios.post('/api/book', { isbn, title, author, description, published_date, publisher })
             .then((result) => {
-                this.props.history.push("/")
+                this.props.history.push("/books")
             });
     }
 
@@ -45,8 +45,6 @@ class Create extends Component {
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <h4><Link to="/"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Homepage </Link></h4>
-                        <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Book List</Link></h4>
 
                         <form onSubmit={this.onSubmit}>
                             <div class="form-group">

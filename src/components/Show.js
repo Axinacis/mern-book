@@ -40,7 +40,7 @@ class Show extends Component {
                     </div>
                     <div class="panel-body">
                         <h4><Link to="/"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Homepage </Link></h4>
-                        <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Book List</Link></h4>
+                        <h4><Link to="/books"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Book List</Link></h4>
 
                         <dl>
                             <dt>ISBN:</dt>

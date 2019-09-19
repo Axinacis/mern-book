@@ -32,8 +32,6 @@ class Home extends Component {
                         {localStorage.getItem('jwtToken') &&
                         <button className="btn btn-primary" onClick={this.logout}>Logout</button>
                         }
-                        <h4><Link to="/books"><span className="glyphicon glyphicon-th-list"
-                                                    aria-hidden="true"></span> Book List</Link></h4>
                         <div>
                             <p>Liibalaaba diipadaapa news updatet tänne joo</p>
                         </div>

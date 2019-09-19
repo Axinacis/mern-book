@@ -44,8 +44,6 @@ class App extends Component {
               </h3>
             </div>
             <div class="panel-body">
-                <h4><Link to="/"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Homepage </Link></h4>
-                <h4><Link to="/create"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Book</Link></h4>
 
               <table class="table table-stripe">
                 <thead>
