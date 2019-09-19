@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27d31530-a86d-4149-ba12-98ffb7d6a511" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Create.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Show.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Show.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +79,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568267870463</updated>
-      <workItem from="1568267874299" duration="19868000" />
+      <workItem from="1568267874299" duration="20003000" />
+      <workItem from="1568358117032" duration="639000" />
+      <workItem from="1568611948309" duration="1025000" />
+      <workItem from="1568629312958" duration="2893000" />
+      <workItem from="1568632989479" duration="12000" />
+      <workItem from="1568871722367" duration="2291000" />
     </task>
     <task id="LOCAL−00001" summary="init: book management and auth.&#10;publishing date needs work">
       <created>1568280652378</created>
@@ -83,7 +92,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1568280652378</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="DATE TOIMIII?!">
+      <created>1568292299720</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1568292299720</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -102,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init: book management and auth.&#10;publishing date needs work" />
-    <option name="LAST_COMMIT_MESSAGE" value="init: book management and auth.&#10;publishing date needs work" />
+    <MESSAGE value="DATE TOIMIII?!" />
+    <option name="LAST_COMMIT_MESSAGE" value="DATE TOIMIII?!" />
   </component>
 </project>

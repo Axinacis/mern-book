@@ -11,11 +11,13 @@ import Register from './components/Register';
 import Edit from './components/Edit';
 import Create from './components/Create';
 import Show from './components/Show';
+import Home from './components/Home';
 
 ReactDOM.render(
     <Router>
         <div>
-            <Route exact path='/' component={App} />
+            <Route exact path='/' component={Home} />
+            <Route path='/books' component={App} />
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
             <Route path='/edit/:id' component={Edit} />
