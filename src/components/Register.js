@@ -21,9 +21,7 @@ class Create extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-
         const { username, password } = this.state;
-
         axios.post('/api/auth/register', { username, password })
             .then((result) => {
                 this.props.history.push("/login")

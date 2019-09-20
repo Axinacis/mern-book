@@ -26,16 +26,15 @@ class Search extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         // const {isbn, title, author, publisher} = this.state;
-        let axiosRes = {}
-        const searchMatches = this.state;
-        console.log(searchMatches)
-        delete searchMatches.searchRes
+        const newState = this.state;
+        console.log(newState)
+        delete newState.searchRes
 
-        axios.post('/findbook', {searchMatches})
+        /*axios.get('api/book/findbook', {newState})
             .then((result) => {
-                axiosRes = result
-            });
-        this.setState({searchRes: axiosRes})
+                newState.searchRes = result
+            });*/
+        this.setState({newState })
     }
 
     render() {
